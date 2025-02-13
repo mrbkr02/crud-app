@@ -53,7 +53,7 @@ export const update = async(req, res) => {
         if(!updatedUser) {
             res.status(400).json({message : `The user with user id ${id} does not exist`});
         }
-        res.status(200).json(updatedUser);
+        res.status(200).json({msg : "User updated successfully"});
 
     } catch (error) {
         res.status(500).json({error : error.message});

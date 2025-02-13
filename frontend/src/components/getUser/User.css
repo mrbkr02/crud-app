@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -16,7 +16,30 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 80%;
     max-width: 600px;
-  }
+  } */
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px; /* Added padding for spacing */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed from center to flex-start */
+    min-height: 100vh;
+    overflow-y: auto; /* Allow scrolling */
+}
+
+.userTable {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px; /* Ensure some spacing from the top */
+}
+
   
   .userTable a {
     display: inline-block;
@@ -48,7 +71,7 @@ body {
     background-color: #007bff;
     color: white;
   }
-  
+/*   
   #action-buttons {
     display: flex;
     justify-content: center;
@@ -62,8 +85,30 @@ body {
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
-  }
+  } */
+
+  #action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Ensures buttons wrap inside the container */
+}
+
+#action-buttons button,
+#action-buttons a {
+    flex: 1 1 auto; /* Allows buttons to resize properly */
+    min-width: 80px; /* Ensures they don’t shrink too much */
+    text-align: center;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
   
+
   #action-buttons button:hover {
     background-color: #c82333;
   }
